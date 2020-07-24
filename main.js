@@ -73,15 +73,18 @@ function printHoliday(currentMonth) {
 function changeMonth(){
   var btn = $('button #prev ,button #next');
   btn.click(getNewMonth);
-  console.log(btn);
-  
+  console.log("bottone" , btn);
+  getNewMonth();
+
 
 
 }
 
 function getNewMonth(){
   var monthSwap = $(this);
-  console.log(monthSwap);
+  console.log("click", monthSwap);
+
+
 
 }
 
