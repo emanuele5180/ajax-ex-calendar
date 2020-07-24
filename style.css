@@ -7,11 +7,24 @@
 
 
 
-td, th {
-  width: 60px;
-  height: 60px;
-  border:1px solid #ddd;
-  padding:8px;
+h1 {
   text-align: center;
+}
 
+.giorni-mese {
+  list-style: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holidays {
+  color: red;
+}
+
+button {
+  margin: 0 50px;
 }
