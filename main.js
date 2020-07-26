@@ -70,17 +70,35 @@ function printHoliday(currentMonth) {
 
 }
 
-function changeMonth(){
-  var btn = $('button #prev ,button #next');
-  btn.click(getNewMonth);
+function changeMonthPrev(){
+  var btn = $('button#prev');
+  btn.click(getNewMonthPrev);
   console.log("bottone" , btn);
-  getNewMonth();
+  getNewMonthPrev();
 
 
 
 }
 
-function getNewMonth(){
+function getNewMonthPrev(){
+  var monthSwap = $(this);
+  console.log("click", monthSwap);
+
+
+
+}
+
+function changeMonthNext(){
+  var btn = $('button#next');
+  btn.click(getNewMonthNext);
+  console.log("bottone" , btn);
+  getNewMonthNext();
+
+
+
+}
+
+function getNewMonthNext(){
   var monthSwap = $(this);
   console.log("click", monthSwap);
 
@@ -94,7 +112,8 @@ function init() {
   printMonth(currentMonth);
   printHoliday(currentMonth);
 
-  changeMonth()
+  changeMonthNext();
+  changeMonthPrev();
 
 
 }
